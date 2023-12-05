@@ -16,7 +16,6 @@ class Day04Part1 : LinesPuzzle() {
             val matchingNumbers = givenNumbers.filter { winningNumbers.contains(it) }
 
             if (matchingNumbers.size == 1) {
-                println("only 1 member")
                 1
             } else {
                 2.0.pow(matchingNumbers.size - 1).toInt()
